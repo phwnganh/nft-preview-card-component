@@ -1,0 +1,91 @@
+@use '../tokens' as *;
+
+.card{
+
+  padding: 24px;
+
+  background-color: $blue-900;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card__image img{
+  border-radius: 8px;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__title{
+    color: $white;
+    font-size: $text-preset-1;
+    line-height: $line-height-preset-1;
+    font-weight: $font-weight-preset-1;
+  }
+
+  &__description{
+    color: $blue-500;
+    font-size: $text-preset-2;
+    line-height: $line-height-preset-2;
+    font-weight: $font-weight-preset-2;
+  }
+}
+
+.card-detailed{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__statistic, &__remaining{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__number{
+    color: $cyan-400;
+    font-weight: bold;
+  }
+}
+
+.card-remaining__number{
+  color: $blue-500;
+}
+
+.card-author{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &__avatar{
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &__name{
+    color: $blue-500;
+
+    & span{
+      color: $white;
+      margin-left: 8px;
+    }
+  }
+}
+
+hr{
+  border: 1px solid $blue-800;
+}

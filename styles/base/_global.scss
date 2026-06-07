@@ -1,0 +1,12 @@
+@use '../tokens' as *;
+body{
+  font-family: $font-primary;
+}
+
+.page{
+  background-color: $blue-950;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
