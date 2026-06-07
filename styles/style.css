@@ -136,6 +136,10 @@ fieldset {
   align-items: center;
   flex-shrink: 0;
 }
+.card-author__avatar img {
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+}
 .card-author__name {
   color: #8BACD9;
 }
